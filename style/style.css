@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.home-header {
+  position: relative;
+  -webkit-padding-before: 20px;
+          padding-block-start: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 130px;
+}
+.home-header__text-contaier {
+  -webkit-margin-after: 20px;
+          margin-block-end: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.home-header__text-contaier p:nth-child(1) {
+  -webkit-margin-after: 5px;
+          margin-block-end: 5px;
+}
+.home-header__icon {
+  width: 35px;
+  height: 35px;
+  background-color: teal;
+}
+.home-header__line {
+  width: 70%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  background-color: black;
+}/*# sourceMappingURL=style.css.map */

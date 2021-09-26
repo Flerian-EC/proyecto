@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+//variables del texto
+$titulos: 'Montserrat', sans-serif;
+$texto: 'Nunito', sans-serif;
+
+
+@mixin secciones($altura) {
+  width: 100%;
+  height: $altura;
+}
