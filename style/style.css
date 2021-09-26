@@ -8,7 +8,6 @@ html {
   font-size: 62.5%;
 }
 
-/* Color Theme Swatches in Hex */
 .home-header {
   position: relative;
   -webkit-padding-before: 20px;
@@ -24,7 +23,7 @@ html {
   -webkit-margin-after: 20px;
           margin-block-end: 20px;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.6rem;
+  font-size: 16px;
   text-align: center;
 }
 .home-header__text-contaier p:nth-child(1) {
@@ -35,6 +34,7 @@ html {
   width: 35px;
   height: 35px;
   position: relative;
+  cursor: pointer;
 }
 .home-header__icon span {
   width: 100%;
@@ -63,4 +63,106 @@ html {
   transform: translateX(-50%);
   display: block;
   background-color: black;
+}
+
+.home-main {
+  padding: 40px 0;
+  background-color: rgba(109, 150, 166, 0.2);
+  width: 100%;
+  height: calc(100vh - 140px);
+}
+
+.calc-container {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.calc-container__title {
+  width: 240px;
+  margin: 0 auto;
+  -webkit-margin-after: 20px;
+          margin-block-end: 20px;
+  display: block;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+}
+.calc-container__number {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  -webkit-margin-after: 20px;
+          margin-block-end: 20px;
+  border: none;
+  outline: none;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-align: center;
+}
+.calc-container__number::-moz-placeholder {
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+.calc-container__number:-ms-input-placeholder {
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+.calc-container__number::placeholder {
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+.calc-container__button {
+  width: 90px;
+  height: 25px;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  -webkit-margin-after: 30px;
+          margin-block-end: 30px;
+  border: none;
+  outline: none;
+  background-color: #34d1e2;
+  font-family: "Nunito", sans-serif;
+  font-size: 17px;
+  cursor: pointer;
+}
+.calc-container__color-container {
+  width: 200px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.calc-container__color-container--box {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border-radius: 40px;
+}
+.calc-container__color-container--box p {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Nunito", sans-serif;
+  font-size: 13px;
+}
+.calc-container__color-container--box p::after {
+  content: "%";
+}
+.calc-container__color-container--box:nth-child(1) {
+  background-color: rgba(244, 26, 90, 0.5);
+}
+.calc-container__color-container--box:nth-child(2) {
+  background-color: rgba(55, 166, 82, 0.81);
+}
+.calc-container__color-container--box:nth-child(3) {
+  background-color: rgba(5, 131, 242, 0.88);
 }/*# sourceMappingURL=style.css.map */
