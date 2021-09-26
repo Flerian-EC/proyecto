@@ -4,7 +4,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  @include secciones(130px);
+  background-color: rgba($color: $fondo, $alpha: 0.2);
+  @include secciones(140px);
   &__text-contaier {
     margin-block-end: 20px;
     font-family: $titulos;
@@ -17,7 +18,25 @@
   &__icon {
     width: 35px;
     height: 35px;
-    background-color: teal;
+    position: relative;
+    span {
+      width: 100%;
+      height: 3px;
+      display: block;
+      position: absolute;
+      left: 0;
+      background-color: $tema6;
+    }
+    span:nth-child(1) {
+      top: 3px;
+    }
+    span:nth-child(2) {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    span:nth-child(3) {
+      bottom: 3px;
+    }
   }
   &__line {
     width: 70%;

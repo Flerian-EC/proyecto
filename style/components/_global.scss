@@ -11,6 +11,15 @@ html {
 $titulos: 'Montserrat', sans-serif;
 $texto: 'Nunito', sans-serif;
 
+/* Color Theme Swatches in Hex */
+$tema1: #011C40;
+$tema2: #011126;
+$tema3: #025373;
+$tema4: #1C8DA6;
+$tema5: #2CB1BF;
+$tema6: #34d1e2;
+$fondo: #6D96A6;
+
 
 @mixin secciones($altura) {
   width: 100%;
