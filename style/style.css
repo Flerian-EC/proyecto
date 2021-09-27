@@ -43,6 +43,7 @@ html {
   position: absolute;
   left: 0;
   background-color: #34d1e2;
+  box-shadow: -2px 2px 3px 0px rgba(0, 0, 0, 0.1);
 }
 .home-header__icon span:nth-child(1) {
   top: 3px;
@@ -66,6 +67,9 @@ html {
 }
 
 .home-main {
+  min-height: 585px;
+  display: flex;
+  align-items: center;
   padding: 40px 0;
   background-color: rgba(109, 150, 166, 0.2);
   width: 100%;
@@ -98,23 +102,28 @@ html {
           margin-block-end: 20px;
   border: none;
   outline: none;
+  box-shadow: -4px 4px 9px -3px rgba(0, 0, 0, 0.6);
   font-family: "Nunito", sans-serif;
   font-size: 15px;
   font-weight: bold;
   letter-spacing: 5px;
   text-align: center;
+  text-transform: uppercase;
 }
 .calc-container__number::-moz-placeholder {
   letter-spacing: 1px;
   font-weight: 300;
+  text-transform: lowercase;
 }
 .calc-container__number:-ms-input-placeholder {
   letter-spacing: 1px;
   font-weight: 300;
+  text-transform: lowercase;
 }
 .calc-container__number::placeholder {
   letter-spacing: 1px;
   font-weight: 300;
+  text-transform: lowercase;
 }
 .calc-container__button {
   width: 90px;
@@ -137,6 +146,8 @@ html {
   height: -moz-fit-content;
   height: fit-content;
   margin: 0 auto;
+  -webkit-margin-after: 40px;
+          margin-block-end: 40px;
   display: flex;
   justify-content: space-between;
 }
@@ -145,6 +156,7 @@ html {
   height: 50px;
   position: relative;
   border-radius: 40px;
+  box-shadow: -3px 3px 6px 1px rgba(0, 0, 0, 0.15);
 }
 .calc-container__color-container--box p {
   position: absolute;
@@ -158,11 +170,18 @@ html {
   content: "%";
 }
 .calc-container__color-container--box:nth-child(1) {
-  background-color: rgba(244, 26, 90, 0.5);
+  background-color: rgba(244, 26, 90, 0.8);
 }
 .calc-container__color-container--box:nth-child(2) {
-  background-color: rgba(55, 166, 82, 0.81);
+  background-color: rgba(55, 166, 82, 0.8);
 }
 .calc-container__color-container--box:nth-child(3) {
-  background-color: rgba(5, 131, 242, 0.88);
+  background-color: rgba(5, 131, 242, 0.8);
+}
+.calc-container__principal-color {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: -4px 4px 9px -3px rgba(0, 0, 0, 0.6);
 }/*# sourceMappingURL=style.css.map */

@@ -27,6 +27,7 @@
       position: absolute;
       left: 0;
       background-color: $tema6;
+      box-shadow: -2px 2px 3px 0px rgb(0 0 0 / 10%);
     }
     span:nth-child(1) {
       top: 3px;
@@ -52,6 +53,9 @@
 }
 
 .home-main {
+  min-height: 585px;
+  display: flex;
+  align-items: center;
   padding: 40px 0;
   background-color: rgba($color: $fondo, $alpha: 0.2);
   @include secciones(calc(100vh - 140px));
@@ -77,15 +81,19 @@
     margin-block-end: 20px;
     border: none;
     outline: none;
+    -webkit-box-shadow: -4px 4px 9px -3px rgba(0,0,0,0.6); 
+    box-shadow: -4px 4px 9px -3px rgba(0,0,0,0.6);
     font-family: $texto;
     font-size: 15px;
     font-weight: bold;
     letter-spacing: 5px;
     text-align: center;
+    text-transform: uppercase;
   }
   &__number::placeholder {
     letter-spacing: 1px;
     font-weight: 300;
+    text-transform: lowercase;
   }
   &__button {
     width: 90px;
@@ -105,6 +113,7 @@
     width: 200px;
     height: fit-content;
     margin: 0 auto;
+    margin-block-end: 40px;
     display: flex;
     justify-content: space-between;
     &--box {
@@ -112,6 +121,7 @@
       height: 50px;
       position: relative;
       border-radius: 40px;
+      box-shadow: -3px 3px 6px 1px rgb(0 0 0 / 15%);
       p {
         position: absolute;
         top: 110%;
@@ -125,13 +135,21 @@
       }
     }
     &--box:nth-child(1) {
-      background-color: rgba($color: $r, $alpha: 0.5);
+      background-color: rgba($color: $r, $alpha: 0.8);
     }
     &--box:nth-child(2) {
-      background-color: rgba($color: $g, $alpha: 0.81);
+      background-color: rgba($color: $g, $alpha: 0.8);
     }
     &--box:nth-child(3) {
-      background-color: rgba($color: $b, $alpha: 0.88);
+      background-color: rgba($color: $b, $alpha: 0.8);
     }
+  }
+  &__principal-color {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    border-radius: 15px;
+    -webkit-box-shadow: -4px 4px 9px -3px rgba(0,0,0,0.6); 
+    box-shadow: -4px 4px 9px -3px rgba(0,0,0,0.6);
   }
 }
