@@ -1,0 +1,19 @@
+.home-header {
+  column-gap: 600px;
+  &__text-contaier {
+    font-size: 18px;
+  }
+}
+
+.calc-container {
+  &__title {
+    width: 350px;
+    font-size: 20px;
+  }
+  &__number {
+    font-size: 18px;
+  }
+  &__button {
+    font-size: 19px;
+  }
+}

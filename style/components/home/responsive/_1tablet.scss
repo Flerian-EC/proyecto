@@ -1,0 +1,15 @@
+.home-header {
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 250px;
+  &__text-contaier {
+    text-align: start;
+  }
+  &__line {
+    max-width: 70%;
+  }
+}
+
+.calc-container {
+  box-shadow: -4px 4px 5px 3px rgb(0 0 0 / 11%);
+}

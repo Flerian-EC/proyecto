@@ -1,0 +1,18 @@
+.home-header {
+  -moz-column-gap: 600px;
+       column-gap: 600px;
+}
+.home-header__text-contaier {
+  font-size: 18px;
+}
+
+.calc-container__title {
+  width: 350px;
+  font-size: 20px;
+}
+.calc-container__number {
+  font-size: 18px;
+}
+.calc-container__button {
+  font-size: 19px;
+}/*# sourceMappingURL=2laptop.css.map */
