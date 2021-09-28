@@ -44,6 +44,7 @@ html {
   left: 0;
   background-color: #34d1e2;
   box-shadow: -2px 2px 3px 0px rgba(0, 0, 0, 0.1);
+  will-change: transform, opacity;
   transition-property: transform, opacity;
   transition-duration: 0.3s;
 }
@@ -204,6 +205,7 @@ html {
   background-color: white;
   transition-property: transform;
   transition-duration: 0.5s;
+  will-change: transform;
 }
 
 .recorrer {
