@@ -159,7 +159,8 @@
     height: 250px;
     margin: 0 auto;
     border-radius: 15px;
-    box-shadow: -3px 3px 10px -4px rgb(0 0 0 / 45%) inset;
+    box-shadow: -3px 3px 10px 0px rgb(0 0 0 / 45%) inset;
+    will-change: transform, box-shadow, border-radius;
   }
 }
 
@@ -193,6 +194,27 @@
   span:nth-child(3) {
     transform: rotate(45deg) translate(-9px, -9px);
     opacity: 0;
+  }
+}
+.animar-color {
+  animation-name: rotar-bloque;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+@keyframes rotar-bloque {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    border-radius: 50%;
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    transform: rotate(-360deg);
+    border-radius: 15px;
   }
 }
 

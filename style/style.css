@@ -194,7 +194,8 @@ html {
   height: 250px;
   margin: 0 auto;
   border-radius: 15px;
-  box-shadow: -3px 3px 10px -4px rgba(0, 0, 0, 0.45) inset;
+  box-shadow: -3px 3px 10px 0px rgba(0, 0, 0, 0.45) inset;
+  will-change: transform, box-shadow, border-radius;
 }
 
 .home-inf {
@@ -228,6 +229,48 @@ html {
   opacity: 0;
 }
 
+.animar-color {
+  -webkit-animation-name: rotar-bloque;
+          animation-name: rotar-bloque;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes rotar-bloque {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    border-radius: 50%;
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    transform: rotate(-360deg);
+    border-radius: 15px;
+  }
+}
+
+@keyframes rotar-bloque {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    border-radius: 50%;
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    transform: rotate(-360deg);
+    border-radius: 15px;
+  }
+}
 .home-inf__container {
   width: 90%;
   height: 100%;

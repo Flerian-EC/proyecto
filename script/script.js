@@ -2,6 +2,7 @@ const $botonVentana = document.getElementById("ventana-button");
 const $ventana = document.getElementById("ventana-inf");
 const $botonCalc = document.getElementById("calc-button");
 const $numeroHexa = document.getElementById("hexa-number");
+const $bloqueColor = document.getElementById("principal-color");
 const hexaPermitidos = ["A","B","C","D","E","F"];
 
 //esta funcion obtiene el numero hexadecimal del usuario combierte el texto en mayuscula y separa el numero en un array "[]", por ultimo lo retorna
@@ -52,6 +53,15 @@ const cambio = ({validacion, valor}) => {
     alert(validacion)
   }
 }
+//Esta funcion recibe como parametro la validacion, y si es "true" ejecuta una animacion a un elemento
+const animar = (validacion) => {
+  if(validacion === true) {
+    $bloqueColor.classList.add("animar-color");
+    setTimeout(() => {
+      $bloqueColor.classList.remove("animar-color");
+    }, 1100)
+  }
+}
 
 
 
@@ -64,4 +74,5 @@ $botonCalc.addEventListener("mouseup", (event) => {
   let value = obtenerNumero()
   validar = validarHexa(value);
   cambio({validacion: validar, valor: value});
+  animar(validar);
 })
