@@ -195,7 +195,11 @@ html {
   margin: 0 auto;
   border-radius: 15px;
   box-shadow: -3px 3px 10px 0px rgba(0, 0, 0, 0.45) inset;
-  will-change: transform, box-shadow, border-radius;
+  will-change: transform, box-shadow, border-radius, background-color;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.5s;
 }
 
 .home-inf {
@@ -253,6 +257,7 @@ html {
   100% {
     transform: rotate(-360deg);
     border-radius: 15px;
+    box-shadow: -3px 3px 10px 0px rgba(0, 0, 0, 0.45) inset;
   }
 }
 
@@ -269,6 +274,7 @@ html {
   100% {
     transform: rotate(-360deg);
     border-radius: 15px;
+    box-shadow: -3px 3px 10px 0px rgba(0, 0, 0, 0.45) inset;
   }
 }
 .home-inf__container {

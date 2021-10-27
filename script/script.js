@@ -44,11 +44,26 @@ const validarHexa = (number) => {
   }
   return validacion;
 }
-//Esta funcion esta incompleta. por el momento solo imprime una alerta en base a la validacion
+//(INCOMPLETO) Esta funcion calcula el porcentaje de color de RGB y cambia el texto de un elemento con el porcentaje
+const porcentajeColor = (valor) => {
+  const hexa = []
+  valor.forEach(element => {
+    if(parseFloat(element) * 0 === 0) {
+      hexa.push(parseInt(element))
+    }else {
+      hexa.push(element)
+    }
+  });
+  const lista = [[hexa[0], hexa[1]], [hexa[2], hexa[3]], [hexa[4], hexa[5]]]
+
+  console.log(lista)
+}
+//Esta funcion ejecuta "porcentajeColor()" y cambia el color del bloque principal en base a la validacion y el numero hexadecimal que llega como argumento.
 const cambio = ({validacion, valor}) => {
   if(validacion === true) {
+    porcentajeColor(valor)
     let value = valor.join("")
-    alert(`#${value}`)
+    $bloqueColor.style.backgroundColor = "#" + value;
   }else {
     alert(validacion)
   }
@@ -64,7 +79,7 @@ const animar = (validacion) => {
 }
 
 
-
+//Esta es la ejecucion
 $botonVentana.addEventListener("mouseup", (event) => {
   $ventana.classList.toggle("recorrer");
   $botonVentana.classList.toggle("equis")
@@ -72,7 +87,7 @@ $botonVentana.addEventListener("mouseup", (event) => {
 
 $botonCalc.addEventListener("mouseup", (event) => {
   let value = obtenerNumero()
-  validar = validarHexa(value);
+  let validar = validarHexa(value);
   cambio({validacion: validar, valor: value});
   animar(validar);
 })
