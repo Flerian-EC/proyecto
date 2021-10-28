@@ -51,7 +51,21 @@ const porcentajeColor = (valor) => {
     if(parseFloat(element) * 0 === 0) {
       hexa.push(parseInt(element))
     }else {
-      hexa.push(element)
+      let value;
+      if(element === "A") {
+        value = 10;
+      }else if(element === "B") {
+        value = 11;
+      }else if(element === "C") {
+        value = 12;
+      }else if(element === "D") {
+        value = 13;
+      }else if(element === "E") {
+        value = 14;
+      }else if(element === "F") {
+        value = 15;
+      }
+      hexa.push(value)
     }
   });
   const lista = [[hexa[0], hexa[1]], [hexa[2], hexa[3]], [hexa[4], hexa[5]]]
