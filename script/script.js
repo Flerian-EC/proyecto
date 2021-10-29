@@ -3,6 +3,11 @@ const $ventana = document.getElementById("ventana-inf");
 const $botonCalc = document.getElementById("calc-button");
 const $numeroHexa = document.getElementById("hexa-number");
 const $bloqueColor = document.getElementById("principal-color");
+const $colores = {
+  colorR: document.getElementById("texto-R"),
+  colorG: document.getElementById("texto-G"),
+  colorB: document.getElementById("texto-B")
+}
 const hexaPermitidos = ["A","B","C","D","E","F"];
 
 //esta funcion obtiene el numero hexadecimal del usuario combierte el texto en mayuscula y separa el numero en un array "[]", por ultimo lo retorna
@@ -32,7 +37,7 @@ const validarHexa = (number) => {
             contador += 1;
             break;
           }else if(i + 1 == hexaPermitidos.length) {
-            validacion = `${number[posicion]}, no es parte de los hexadecimales`;
+            validacion = `"${number[posicion]}", no es parte de los hexadecimales`;
           }
         }
       }
@@ -44,7 +49,7 @@ const validarHexa = (number) => {
   }
   return validacion;
 }
-//(INCOMPLETO) Esta funcion calcula el porcentaje de color de RGB y cambia el texto de un elemento con el porcentaje
+//Esta funcion calcula el porcentaje de color de RGB y cambia el texto de un elemento con el porcentaje
 const porcentajeColor = (valor) => {
   const hexa = []
   valor.forEach(element => {
@@ -70,7 +75,19 @@ const porcentajeColor = (valor) => {
   });
   const lista = [[hexa[0], hexa[1]], [hexa[2], hexa[3]], [hexa[4], hexa[5]]]
 
-  console.log(lista)
+  const porcentaje = [];
+  let valorDecimal;
+  let valorPorcentaje
+  lista.forEach(element => {
+    valorDecimal = (element[0] * 16) + element[1];
+    valorPorcentaje = (100 * valorDecimal) / 255;
+    valorPorcentaje = Math.round(valorPorcentaje);
+    porcentaje.push(valorPorcentaje.toString())
+  })
+  
+  $colores.colorR.textContent = porcentaje[0]
+  $colores.colorG.textContent = porcentaje[1]
+  $colores.colorB.textContent = porcentaje[2]
 }
 //Esta funcion ejecuta "porcentajeColor()" y cambia el color del bloque principal en base a la validacion y el numero hexadecimal que llega como argumento.
 const cambio = ({validacion, valor}) => {
