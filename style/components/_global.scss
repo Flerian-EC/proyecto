@@ -20,10 +20,15 @@ $tema5: #2CB1BF;
 $tema6: #34d1e2;
 $fondo: #6D96A6;
 $fondo2: #FAFCFF;
+$grad1: #1CC5DC;
+$grad2: #F5F7B2;
 //rgb
 $r: #F41A5A;
 $g: #37A652;
 $b: #0583F2;
+//gradient
+$primerG: linear-gradient(to right bottom, #1cc5dc, #55d6cd, #8de4bc, #c2efb1, #f5f7b2);
+$segundG: #DEEDF0;
 
 
 @mixin secciones($altura) {
