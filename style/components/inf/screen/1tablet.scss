@@ -1,0 +1,40 @@
+.window-home-inf {
+  width: 70%;
+  h1 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 21px;
+    margin-bottom: 20px;
+  }
+  &__figure {
+    margin-bottom: 30px;
+  }
+  &__first-hexa {
+    font-size: 20px;
+  }
+  &__eje-hexa-box {
+    font-size: 20px;
+  }
+  &__primary-colors--div p{
+    margin: unset;
+    font-size: 20px;
+  }
+  &__binari-colors--div p{
+    font-size: 20px;
+    margin: unset;
+  }
+  &__prueba-hexa {
+    font-size: 20px;
+  }
+  &__comprobacion-color {
+    margin-bottom: 30px;
+  }
+  &__anchor a {
+    font-size: 20px;
+  }
+}

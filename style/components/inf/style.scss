@@ -11,6 +11,7 @@
 
 .window-home-inf {
   width: 90%;
+  max-width: 1010px;
   height: fit-content;
   margin: 0 auto;
   h1 {
@@ -93,6 +94,10 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      align-items: center;
+      &--div p {
+        margin: 0;
+      }
       img {
         width: 50px;
         height: fit-content;

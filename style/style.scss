@@ -4,9 +4,11 @@
 
 @media (min-width: 768px) {
   @import "./components/home/responsive/1tablet";
+  @import "./components/inf/screen/1tablet.scss";
 }
 @media (min-width: 1024px) {
   @import "./components/home/responsive/2laptop";
+  @import "./components/inf/screen/2laptop.scss";
 }
 @media (min-width: 1440px) {
   @import "./components/home/responsive/3laptopL";

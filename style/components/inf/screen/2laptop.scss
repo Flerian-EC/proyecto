@@ -1,0 +1,14 @@
+.window-home-inf {
+  &__primary-colors {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 80px;
+    width: 717px;
+  }
+  &__binari-colors {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
+    width: 478px;
+  }
+}
