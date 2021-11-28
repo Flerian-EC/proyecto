@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+//variables del texto
+$titulos: 'Montserrat', sans-serif;
+$texto: 'Nunito', sans-serif;
+
+//colores
+$tema1: #011C40;
+$tema2: #011126;
+$tema3: #025373;
+$tema4: #1C8DA6;
+$tema5: #2CB1BF;
+$tema6: #34d1e2;
+$fondo: #6D96A6;
+$fondo2: #FAFCFF;
+$grad1: #1CC5DC;
+$grad2: #F5F7B2;
+//rgb
+$r: #F41A5A;
+$g: #37A652;
+$b: #0583F2;
+//gradient
+$segundG: #DEEDF0;
+
+
+@mixin secciones($altura) {
+  width: 100%;
+  height: $altura;
+}

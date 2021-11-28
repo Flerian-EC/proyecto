@@ -1,0 +1,22 @@
+.home-header {
+  column-gap: 1000px;
+}
+
+.home-main__background-img {
+  figure:nth-child(1) {
+    bottom: 0;
+    left: 0px;
+    width: 650px;
+  }
+  figure:nth-child(2) {
+    bottom: 0;
+    right: 0;
+    width: 550px;
+  }
+  figure:nth-child(3) {
+    display: block;
+    top: 30px;
+    left: calc(100% - 300px);
+    width: 200px;
+  }
+}
