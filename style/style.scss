@@ -1,2 +1,16 @@
 @import "./components/global";
 @import "./components/home/1home-style";
+@import "./components/inf/style.scss";
+
+@media (min-width: 768px) {
+  @import "./components/home/responsive/1tablet";
+}
+@media (min-width: 1024px) {
+  @import "./components/home/responsive/2laptop";
+}
+@media (min-width: 1440px) {
+  @import "./components/home/responsive/3laptopL";
+}
+@media (min-width: 1920px) {
+  @import "./components/home/responsive/4pc";
+}
